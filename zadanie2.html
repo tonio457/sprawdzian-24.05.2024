@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <fieldset>
+        <form>
+            <h1>Hobby programistyczne</h1>
+            <p>C++</p>
+            <input type="checkbox" id="checkbox1">
+            <p>Python</p>
+            <input type="checkbox" id="checkbox2">
+            <p>PHP</p>
+            <input type="checkbox" id="checkbox3">
+            <p>Javascript</p>
+            <input type="checkbox" id="checkbox4">
+            <br><br><br>
+            <h1>Hobby szkolne</h1>
+            <p>Konsola</p>
+            <input type="radio" id="radio1">
+            <p>Sala z tenisem stołowym</p>
+            <input type="radio" id="radio2">
+            <p>Szachownica</p>
+            <input type="radio" id="radio3">
+            <h1>Hobby pozaszkolne</h1>
+            <select>
+                <option>Spacery</option>
+                <option>Pilka nozna</option>
+                <option>Siatkowka</option>
+            </select>
+            <br>
+            <button type="button" onClick="pokaz()"></button>
+        </form>
+        <div id="wynik"></div>
+    </fieldset>
+    <script>
+        function pokaz() {
+            const cpp = document.getElementById("chechkbox1");
+            const python = document.getElementById("chechkbox2");
+            const php = document.getElementById("chechkbox3");
+            const Javascript = document.getElementById("chechkbox4");
+            const 
+
+        let selectedLanguages = [];
+
+        if(cpp.checked) {
+            selectedLanguages.push(C++);
+        }
+        if(python.checked) {
+            selectedLanguages.push(Python);
+        }
+        if(php.checked) {
+            selectedLanguages.push(PHP);
+        }
+        if(Javascript.checked) {
+            selectedLanguages.push(JavaScript);
+        }
+        }
+        const wynikDiv = document.getElementById("wynik");
+        if (selectedLanguages.lenght > 0) {
+            wynikDiv.innerHTML = "Wybrane jezyki to: " + selectedLanguages
+        }
+    </script>
+    
+</body>
+</html>
+</body>
+</html>

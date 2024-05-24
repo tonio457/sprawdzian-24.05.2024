@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Różnica między datami zadanie</title>
+</head>
+<body>
+    <center><
+    <h1>Oblicz różnicę między datami</h1>
+    <label for="date1">Pierwsza data:</label>
+    <input type="date" id="date1">
+    
+    <label for="date2">Druga data:</label>
+    <input type="date" id="date2">
+    
+    <button onclick="calculateDifference()">Oblicz różnicę</button>
+    
+    <div id="result"></div>
+    /center>
+    <script>
+        function calculateDifference() {
+            const date1 = new Date(document.getElementById('date1').value);
+            const date2 = new Date(document.getElementById('date2').value);
+            
+            if (isNaN(date1.getTime()) || isNaN(date2.getTime())) {
+                document.getElementById('result').textContent = 'Proszę wprowadzić poprawne daty.';
+                return;
+            }
+            
+            const timeDifference = Math.abs(date2 - date1);
+            const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+            
+            document.getElementById('result').textContent = `Różnica między datami to ${daysDifference} dni.`;
+        }
+    </script>
+</body>
+</html>
